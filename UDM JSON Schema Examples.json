@@ -67,9 +67,11 @@
     "brand": "Chevrolet",
     "scrollDepth": 75
   },
-  "eventData": {
+  "eventData": {    
+    "id": "event123",
     "type": "click",
-    "name": "Banner Click"
+    "name": "Banner Click",
+    "timeStamp": "2023-06-01T10:30:00Z"
   },
   "transaction": {
     "id": "transaction123",
@@ -343,11 +345,11 @@
       }
     ],
     "vehicleList": [
-      "vehicle123",
-      "vehicle456"
+      "1FTFX1EF9BFA29585",
+      "1N4AB41D5VC780869"
     ],
     "sharedVehicleList": [
-      "vehicle789"
+      "1N4AB41D5VC780869"
     ],
     "vehicleCount": 2,
     "sharedVehicleCount": 1
