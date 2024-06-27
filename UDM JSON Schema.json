@@ -266,6 +266,10 @@
       "type": "object",
       "description": "Event data details",
       "properties": {
+        "id": {
+          "type": "string",
+          "description": "Event ID"
+        },
         "type": {
           "type": "string",
           "description": "Event type"
@@ -273,6 +277,11 @@
         "name": {
           "type": "string",
           "description": "Event name"
+        },
+        "timeStamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of the event"
         }
       }
     },
