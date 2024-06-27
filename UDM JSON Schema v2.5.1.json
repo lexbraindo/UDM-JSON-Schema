@@ -1,0 +1,1417 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "user": {
+      "type": "object",
+      "description": "Information about the user",
+      "properties": {
+        "ecid": {
+          "type": "string",
+          "description": "The unique identifier for the user"
+        },
+        "id": {
+          "type": "string",
+          "description": "User's ID"
+        },
+        "cdi": {
+          "type": "string",
+          "description": "Customer Data Identifier"
+        },
+        "gcin": {
+          "type": "string",
+          "description": "Global Customer Identifier"
+        },
+        "accountStartDate": {
+          "type": "string",
+          "format": "date",
+          "description": "The date when the user's account was created"
+        },
+        "onstarAccountId": {
+          "type": "string",
+          "description": "OnStar account ID"
+        },
+        "role": {
+          "type": "string",
+          "description": "User's role"
+        },
+        "fullName": {
+          "type": "string",
+          "description": "User's full name"
+        },
+        "emailAddress": {
+          "type": "string",
+          "description": "User's email address"
+        },
+        "dateOfBirth": {
+          "type": "string",
+          "format": "date",
+          "description": "User's date of birth"
+        },
+        "preferredLanguage": {
+          "type": "string",
+          "description": "User's preferred language"
+        },
+        "country": {
+          "type": "string",
+          "description": "Country associated with the user's account"
+        },
+        "zipCode": {
+          "type": "string",
+          "description": "User's zip code"
+        },
+        "gender": {
+          "type": "string",
+          "description": "User's gender"
+        },
+        "region": {
+          "type": "string",
+          "description": "Region associated with the user"
+        },
+        "onboardingStatus": {
+          "type": "string",
+          "description": "User's onboarding status"
+        },
+        "registrationMethod": {
+          "type": "string",
+          "description": "Method used for user registration"
+        },
+        "organization": {
+          "type": "object",
+          "description": "Organization details",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Organization ID"
+            },
+            "name": {
+              "type": "string",
+              "description": "Organization name"
+            }
+          }
+        },
+        "customerTenure": {
+          "type": "string",
+          "description": "Duration of customer tenure"
+        },
+        "authentication": {
+          "type": "object",
+          "description": "Authentication details",
+          "properties": {
+            "method": {
+              "type": "string",
+              "description": "Authentication method"
+            },
+            "state": {
+              "type": "string",
+              "description": "Authentication state"
+            }
+          }
+        },
+        "preferredDealer": {
+          "type": "object",
+          "description": "Preferred dealer information",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Dealer's name"
+            },
+            "zipCode": {
+              "type": "string",
+              "description": "Dealer's zip code"
+            },
+            "id": {
+              "type": "string",
+              "description": "Dealer's ID"
+            }
+          }
+        },
+        "rewardsInfo": {
+          "type": "object",
+          "description": "Rewards information",
+          "properties": {
+            "tier": {
+              "type": "string",
+              "description": "Rewards tier"
+            },
+            "memberId": {
+              "type": "string",
+              "description": "Member ID for rewards"
+            },
+            "gmCardholderStatus": {
+              "type": "string",
+              "description": "GM cardholder status for rewards"
+            },
+            "rewardsStatus": {
+              "type": "string",
+              "description": "Status of rewards"
+            }
+          }
+        },
+        "channel": {
+          "type": "string",
+          "description": "User's channel"
+        },
+        "businessAccountStatus": {
+          "type": "string",
+          "description": "Status of business account"
+        },
+        "lineOfBusiness": {
+          "type": "string",
+          "description": "Line of business"
+        }
+      }
+    },
+    "session": {
+      "type": "object",
+      "description": "Session details",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Session ID"
+        },
+        "referrer": {
+          "type": "string",
+          "description": "Referrer URL"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of the session"
+        },
+        "visitNumber": {
+          "type": "integer",
+          "description": "count of the current visit number"
+        }
+      }
+    },
+    "page": {
+      "type": "object",
+      "description": "Page details",
+      "properties": {
+        "pageName": {
+          "type": "string",
+          "description": "Page name"
+        },
+        "title": {
+          "type": "string",
+          "description": "Page title"
+        },
+        "language": {
+          "type": "string",
+          "description": "Page language"
+        },
+        "country": {
+          "type": "string",
+          "description": "Page country"
+        },
+        "region": {
+          "type": "string",
+          "description": "Page region"
+        },
+        "siteName": {
+          "type": "string",
+          "description": "Name of the site"
+        },
+        "previousPage": {
+          "type": "string",
+          "description": "Previous page URL"
+        },
+        "url": {
+          "type": "string",
+          "description": "Page URL"
+        },
+        "path": {
+          "type": "string",
+          "description": "Page path"
+        },
+        "type": {
+          "type": "string",
+          "description": "Page type"
+        },
+        "subType": {
+          "type": "string",
+          "description": "Page sub-type"
+        },
+        "pageGroup1": {
+          "type": "string",
+          "description": "Page group 1"
+        },
+        "pageGroup2": {
+          "type": "string",
+          "description": "Page group 2"
+        },
+        "pageGroup3": {
+          "type": "string",
+          "description": "Page group 3"
+        },
+        "pageGroup4": {
+          "type": "string",
+          "description": "Page group 4"
+        },
+        "pageGroup5": {
+          "type": "string",
+          "description": "Page group 5"
+        },
+        "brand": {
+          "type": "string",
+          "description": "Brand associated with the page"
+        },
+        "scrollDepth": {
+          "type": "number",
+          "description": "Scroll depth percentage"
+        }
+      }
+    },
+    "eventData": {
+      "type": "object",
+      "description": "Event data details",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Event type"
+        },
+        "name": {
+          "type": "string",
+          "description": "Event name"
+        }
+      }
+    },
+    "transaction": {
+      "type": "object",
+      "description": "Transaction details",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Transaction ID"
+        },
+        "totalAmount": {
+          "type": "number",
+          "description": "Total transaction amount"
+        },
+        "subTotal": {
+          "type": "number",
+          "description": "Subtotal amount"
+        },
+        "shipping": {
+          "type": "number",
+          "description": "Shipping cost"
+        },
+        "tax": {
+          "type": "number",
+          "description": "Tax amount"
+        },
+        "brand": {
+          "type": "string",
+          "description": "Brand involved in the transaction"
+        },
+        "salesChannel": {
+          "type": "string",
+          "description": "Sales channel used for the transaction"
+        },
+        "rewardPoints": {
+          "type": "integer",
+          "description": "Reward points earned in the transaction"
+        },
+        "discount": {
+          "type": "object",
+          "description": "Discount details",
+          "properties": {
+            "type": {
+              "type": "string",
+              "description": "Type of discount"
+            },
+            "name": {
+              "type": "string",
+              "description": "Name of the discount"
+            },
+            "amount": {
+              "type": "number",
+              "description": "Discount amount"
+            }
+          }
+        },
+        "productsList": {
+          "type": "array",
+          "description": "List of products involved in the transaction",
+          "items": {
+            "type": "object",
+            "description": "Products protperty details"
+          }
+        },
+        "campaignsAssociated": {
+          "type": "array",
+          "description": "List of associated campaigns",
+          "items": {
+            "type": "string",
+            "description": "Campaign ID"
+          }
+        }
+      }
+    },
+    "products": {
+      "type": "array",
+      "description": "List of product objects",
+      "items": {
+        "type": "object",
+        "description": "Product details",
+        "properties": {
+          "productId": {
+            "type": "string",
+            "description": "Product ID"
+          },
+          "productVariant": {
+            "type": "string",
+            "description": "unique code or description for additional item details/options"
+          },
+          "productVariantId": {
+            "type": "string",
+            "description": "unique code or sku for variant if different than the productId"
+          },
+          "productName": {
+            "type": "string",
+            "description": "Product name"
+          },
+          "productCategory": {
+            "type": "string",
+            "description": "Product category"
+          },
+          "price": {
+            "type": "number",
+            "description": "Product price"
+          },
+          "listPrice": {
+            "type": "number",
+            "description": "List price of the product"
+          },
+          "displayPrice": {
+            "type": "number",
+            "description": "Display price of the product"
+          },
+          "quantity": {
+            "type": "number",
+            "description": "the number of units of a single product item."
+          },
+          "productBrand": {
+            "type": "string",
+            "description": "Brand of the product"
+          },
+          "discounts": {
+            "type": "array",
+            "description": "List of discounts on the product",
+            "items": {
+              "type": "object",
+              "description": "Discount details",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "description": "Type of discount"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of the discount"
+                },
+                "amount": {
+                  "type": "number",
+                  "description": "Discount amount"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "vehicle": {
+      "type": "object",
+      "description": "Vehicle details",
+      "properties": {
+        "vin": {
+          "type": "string",
+          "description": "Vehicle Identification Number"
+        },
+        "brand": {
+          "type": "string",
+          "description": "Vehicle brand"
+        },
+        "modelName": {
+          "type": "string",
+          "description": "Model name of the vehicle"
+        },
+        "color": {
+          "type": "string",
+          "description": "Vehicle color"
+        },
+        "modelYear": {
+          "type": "string",
+          "description": "Model year of the vehicle"
+        },
+        "trim": {
+          "type": "string",
+          "description": "Trim of the vehicle"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of the vehicle"
+        },
+        "driveType": {
+          "type": "string",
+          "description": "Drive type of the vehicle"
+        },
+        "powerTrain": {
+          "type": "string",
+          "description": "Power train of the vehicle"
+        },
+        "condition": {
+          "type": "string",
+          "description": "Condition of the vehicle"
+        },
+        "ownershipStatus": {
+          "type": "string",
+          "description": "Ownership status of the vehicle"
+        },
+        "status": {
+          "type": "string",
+          "description": "Status of the vehicle"
+        },
+        "bodyStyle": {
+          "type": "string",
+          "description": "Body style of the vehicle"
+        },
+        "tenure": {
+          "type": "string",
+          "description": "Tenure of the vehicle"
+        },
+        "location": {
+          "type": "string",
+          "description": "Location of the vehicle"
+        },
+        "promotions": {
+          "type": "array",
+          "description": "List of promotions for the vehicle",
+          "items": {
+            "type": "object",
+            "description": "Promotion details",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Promotion name"
+              },
+              "id": {
+                "type": "string",
+                "description": "Promotion ID"
+              },
+              "startDate": {
+                "type": "string",
+                "format": "date",
+                "description": "Promotion start date"
+              },
+              "endDate": {
+                "type": "string",
+                "format": "date",
+                "description": "Promotion end date"
+              },
+              "description": {
+                "type": "string",
+                "description": "Promotion description"
+              }
+            }
+          }
+        },
+        "purchaseDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Purchase date of the vehicle"
+        },
+        "leaseEndDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Lease end date of the vehicle"
+        },
+        "mileage": {
+          "type": "integer",
+          "description": "Mileage of the vehicle"
+        },
+        "price": {
+          "type": "number",
+          "description": "Price of the vehicle"
+        },
+        "resaleValue": {
+          "type": "number",
+          "description": "Resale value of the vehicle"
+        },
+        "drpo": {
+          "type": "boolean",
+          "description": "DRPO status of the vehicle"
+        },
+        "packages": {
+          "type": "array",
+          "description": "List of vehicle subscription packages",
+          "items": {
+            "type": "object",
+            "description": "Subscription package details",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Subscription package name"
+              },
+              "status": {
+                "type": "string",
+                "description": "Subscription package status"
+              },
+              "plan": {
+                "type": "string",
+                "description": "Subscription package plan"
+              },
+              "duration": {
+                "type": "string",
+                "description": "Subscription package duration"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "description": "List of features of the vehicle",
+          "items": {
+            "type": "object",
+            "description": "Feature details",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Feature name"
+              },
+              "capable": {
+                "type": "boolean",
+                "description": "Feature capability status"
+              },
+              "enrolled": {
+                "type": "boolean",
+                "description": "Feature enrollment status"
+              }
+            }
+          }
+        },
+        "history": {
+          "type": "array",
+          "description": "Vehicle history details",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Vehicle history ID"
+              },
+              "recordedDate": {
+                "type": "string",
+                "format": "date-time",
+                "description": "Date and time when the record was created"
+              },
+              "event": {
+                "type": "string",
+                "description": "Event type"
+              },
+              "description": {
+                "type": "string",
+                "description": "Description of the event"
+              },
+              "serviceEntity": {
+                "type": "string",
+                "description": "Service entity involved"
+              },
+              "relatedDocuments": {
+                "type": "array",
+                "description": "List of related documents",
+                "items": {
+                  "type": "string",
+                  "description": "Document ID"
+                }
+              },
+              "notes": {
+                "type": "string",
+                "description": "Additional notes"
+              },
+              "mileageAtTime": {
+                "type": "integer",
+                "description": "Mileage of the vehicle at the time of the event"
+              },
+              "location": {
+                "type": "string",
+                "description": "Location of the event"
+              },
+              "serviceCost": {
+                "type": "number",
+                "description": "Cost of the service"
+              },
+              "partsChanged": {
+                "type": "array",
+                "description": "List of parts changed",
+                "items": {
+                  "type": "string",
+                  "description": "Part ID"
+                }
+              },
+              "warrantyStatus": {
+                "type": "string",
+                "description": "Warranty status"
+              },
+              "serviceReceipt": {
+                "type": "string",
+                "description": "Service receipt"
+              }
+            }
+          }
+        }
+      }
+    },
+    "garage": {
+      "type": "object",
+      "description": "Garage details",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Garage ID"
+        },
+        "chargers": {
+          "type": "array",
+          "description": "List of chargers in the garage",
+          "items": {
+            "type": "object",
+            "description": "Charger details",
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "Type of the charger"
+              },
+              "brand": {
+                "type": "string",
+                "description": "Brand of the charger"
+              },
+              "status": {
+                "type": "string",
+                "description": "Status of the charger"
+              }
+            }
+          }
+        },
+        "vehicleList": {
+          "type": "array",
+          "description": "List of vehicles in the garage",
+          "items": {
+            "type": "string",
+            "description": "Vehicle ID"
+          }
+        },
+        "sharedVehicleList": {
+          "type": "array",
+          "description": "List of shared vehicles",
+          "items": {
+            "type": "string",
+            "description": "Shared vehicle ID"
+          }
+        },
+        "vehicleCount": {
+          "type": "integer",
+          "description": "Total vehicle count"
+        },
+        "sharedVehicleCount": {
+          "type": "integer",
+          "description": "Shared vehicle count"
+        }
+      }
+    },
+    "integration": {
+      "type": "object",
+      "description": "Integration details",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Integration ID"
+        },
+        "platform": {
+          "type": "string",
+          "description": "Platform used for integration"
+        },
+        "dataPoints": {
+          "type": "array",
+          "description": "Data points involved in the integration",
+          "items": {
+            "type": "string",
+            "description": "Data point ID"
+          }
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of integration"
+        },
+        "status": {
+          "type": "string",
+          "description": "Status of the integration"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last updated timestamp"
+        }
+      }
+    },
+    "platform": {
+      "type": "object",
+      "description": "Platform details",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Platform ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "Platform name"
+        },
+        "version": {
+          "type": "string",
+          "description": "Platform version"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of platform"
+        },
+        "deploymentDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Deployment date of the platform"
+        },
+        "environmentType": {
+          "type": "string",
+          "description": "Type of environment"
+        },
+        "supportedMarket": {
+          "type": "string",
+          "description": "Supported market for the platform"
+        }
+      }
+    },
+    "device": {
+      "type": "object",
+      "description": "Device details",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Device ID"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of device"
+        },
+        "name": {
+          "type": "string",
+          "description": "Device name"
+        },
+        "os": {
+          "type": "string",
+          "description": "Operating system of the device"
+        },
+        "manufacturer": {
+          "type": "string",
+          "description": "Device manufacturer"
+        },
+        "language": {
+          "type": "string",
+          "description": "Device language"
+        },
+        "screenOrientation": {
+          "type": "string",
+          "description": "Screen orientation"
+        },
+        "screenHeight": {
+          "type": "integer",
+          "description": "Screen height in pixels"
+        },
+        "screenWidth": {
+          "type": "integer",
+          "description": "Screen width in pixels"
+        },
+        "networkType": {
+          "type": "string",
+          "description": "Network type used by the device"
+        },
+        "userAgent": {
+          "type": "string",
+          "description": "User agent string"
+        },
+        "ipAddress": {
+          "type": "string",
+          "description": "IP address of the device"
+        },
+        "geoLocation": {
+          "type": "string",
+          "description": "Geolocation of the device"
+        }
+      }
+    },
+    "content": {
+      "type": "array",
+      "description": "List of content objects",
+      "items": {
+        "type": "object",
+        "description": "Content details",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Content ID"
+          },
+          "title": {
+            "type": "string",
+            "description": "Content title"
+          },
+          "type": {
+            "type": "string",
+            "description": "Content type"
+          },
+          "publishDate": {
+            "type": "string",
+            "format": "date",
+            "description": "Publish date of the content"
+          },
+          "category": {
+            "type": "string",
+            "description": "Content category"
+          },
+          "brand": {
+            "type": "string",
+            "description": "Brand associated with the content"
+          },
+          "channel": {
+            "type": "string",
+            "description": "Channel through which content is delivered"
+          },
+          "rendered": {
+            "type": "boolean",
+            "description": "Rendering status of the content"
+          },
+          "error": {
+            "type": "object",
+            "description": "Error details",
+            "properties": {
+              "code": {
+                "type": "string",
+                "description": "Error code"
+              },
+              "message": {
+                "type": "string",
+                "description": "Error message"
+              }
+            }
+          },
+          "associatedTags": {
+            "type": "array",
+            "description": "List of associated tags",
+            "items": {
+              "type": "string",
+              "description": "Tag ID"
+            }
+          },
+          "interactions": {
+            "type": "array",
+            "description": "List of interactions",
+            "items": {
+              "type": "object",
+              "description": "Interaction details"
+            }
+          },
+          "interactionDuration": {
+            "type": "integer",
+            "description": "Duration of interaction"
+          },
+          "interactionType": {
+            "type": "string",
+            "description": "Type of interaction"
+          }
+        }
+      }
+    },
+    "feedback": {
+      "type": "object",
+      "description": "Feedback details",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Feedback ID"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of feedback"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of feedback"
+        },
+        "content": {
+          "type": "string",
+          "description": "Content of the feedback"
+        },
+        "submissionDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Submission date of the feedback"
+        },
+        "npsScore": {
+          "type": "integer",
+          "description": "Net Promoter Score"
+        },
+        "csatScore": {
+          "type": "integer",
+          "description": "Customer Satisfaction Score"
+        },
+        "cesScore": {
+          "type": "integer",
+          "description": "Customer Effort Score"
+        },
+        "fcr": {
+          "type": "boolean",
+          "description": "First Contact Resolution status"
+        },
+        "fcrTimes": {
+          "type": "integer",
+          "description": "Number of times First Contact Resolution was achieved"
+        },
+        "emotion": {
+          "type": "string",
+          "description": "Emotion expressed in the feedback"
+        },
+        "status": {
+          "type": "string",
+          "description": "Status of the feedback"
+        },
+        "response": {
+          "type": "object",
+          "description": "Response details",
+          "properties": {
+            "date": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date of response"
+            },
+            "content": {
+              "type": "string",
+              "description": "Content of the response"
+            },
+            "respondedBy": {
+              "type": "string",
+              "description": "Person who responded"
+            }
+          }
+        }
+      }
+    },
+    "notification": {
+      "type": "object",
+      "description": "Notification details",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Notification ID"
+        },
+        "channel": {
+          "type": "string",
+          "description": "Notification channel"
+        },
+        "category": {
+          "type": "string",
+          "description": "Notification category"
+        },
+        "title": {
+          "type": "string",
+          "description": "Notification title"
+        },
+        "content": {
+          "type": "string",
+          "description": "Notification content"
+        },
+        "brand": {
+          "type": "string",
+          "description": "Brand associated with the notification"
+        },
+        "readStatus": {
+          "type": "boolean",
+          "description": "Read status of the notification"
+        },
+        "clicks": {
+          "type": "integer",
+          "description": "Number of clicks on the notification"
+        },
+        "deliveryStatus": {
+          "type": "string",
+          "description": "Delivery status of the notification"
+        },
+        "actionTaken": {
+          "type": "string",
+          "description": "Action taken in response to the notification"
+        }
+      }
+    },
+    "campaign": {
+      "type": "object",
+      "description": "Campaign details",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Campaign ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "Campaign name"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of campaign"
+        },
+        "startDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Campaign start date"
+        },
+        "endDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Campaign end date"
+        },
+        "audience": {
+          "type": "string",
+          "description": "Target audience for the campaign"
+        },
+        "brand": {
+          "type": "string",
+          "description": "Brand associated with the campaign"
+        },
+        "conversionRate": {
+          "type": "number",
+          "description": "Conversion rate of the campaign"
+        }
+      }
+    },
+    "experiment": {
+      "type": "object",
+      "description": "Experiment details",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Experiment ID"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of experiment"
+        },
+        "name": {
+          "type": "string",
+          "description": "Experiment name"
+        },
+        "variant": {
+          "type": "object",
+          "description": "Variant details",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Variant name"
+            },
+            "description": {
+              "type": "string",
+              "description": "Variant description"
+            },
+            "details": {
+              "type": "string",
+              "description": "Variant details"
+            }
+          }
+        },
+        "startDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Experiment start date"
+        },
+        "endDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Experiment end date"
+        },
+        "status": {
+          "type": "string",
+          "description": "Status of the experiment"
+        },
+        "audience": {
+          "type": "string",
+          "description": "Target audience for the experiment"
+        },
+        "successMetric": {
+          "type": "string",
+          "description": "Success metric for the experiment"
+        },
+        "brand": {
+          "type": "string",
+          "description": "Brand associated with the experiment"
+        },
+        "channel": {
+          "type": "string",
+          "description": "Channel used for the experiment"
+        },
+        "outcome": {
+          "type": "string",
+          "description": "Outcome of the experiment"
+        }
+      }
+    },
+    "errorLog": {
+      "type": "object",
+      "description": "Error log details",
+      "properties": {
+        "errorId": {
+          "type": "string",
+          "description": "Error log ID"
+        },
+        "errorType": {
+          "type": "string",
+          "description": "Type of error"
+        },
+        "errorCode": {
+          "type": "string",
+          "description": "Error code"
+        },
+        "errorMessage": {
+          "type": "string",
+          "description": "Error message"
+        },
+        "errorLocation": {
+          "type": "string",
+          "description": "Location of the error"
+        }
+      }
+    },
+    "fleet": {
+      "type": "object",
+      "description": "Fleet details",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Fleet ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "Fleet name"
+        },
+        "owner": {
+          "type": "string",
+          "description": "Owner of the fleet"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of fleet"
+        },
+        "orgId": {
+          "type": "string",
+          "description": "Organization identifier"
+        },
+        "location": {
+          "type": "string",
+          "description": "Location of the fleet"
+        },
+        "status": {
+          "type": "object",
+          "description": "Fleet status",
+          "properties": {
+            "onstarSafetyServices": {
+              "type": "string",
+              "description": "OnStar safety services status"
+            },
+            "onstarVehicleInsights": {
+              "type": "string",
+              "description": "OnStar vehicle insights status"
+            },
+            "apiStatus": {
+              "type": "string",
+              "description": "API status"
+            }
+          }
+        },
+        "notes": {
+          "type": "string",
+          "description": "Additional notes"
+        },
+        "size": {
+          "type": "object",
+          "description": "Fleet size details",
+          "properties": {
+            "total": {
+              "type": "integer",
+              "description": "Total number of vehicles in the fleet"
+            },
+            "gmBranded": {
+              "type": "integer",
+              "description": "Number of GM-branded vehicles"
+            },
+            "onstarEquipped": {
+              "type": "integer",
+              "description": "Number of OnStar-equipped vehicles"
+            },
+            "gen10Plus": {
+              "type": "integer",
+              "description": "Number of Gen10+ vehicles"
+            },
+            "numberOfVehiclesAdded": {
+              "type": "integer",
+              "description": "Number of vehicles added to the fleet"
+            },
+            "numberOfVehiclesThrowingErrors": {
+              "type": "integer",
+              "description": "Number of vehicles in feelt throwing errors"
+            }
+          }
+        },
+        "vehiclesInFleet": {
+          "type": "array",
+          "description": "List of vehicles in the fleet",
+          "items": {
+            "type": "string",
+            "description": "Vehicle ID"
+          }
+        }
+      }
+    },
+    "dealer": {
+      "type": "object",
+      "description": "Dealer details",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Dealer ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "Dealer identity name"
+        },
+        "group": {
+          "type": "string",
+          "description": "Dealer group"
+        },
+        "brand": {
+          "type": "string",
+          "description": "Dealer brand"
+        },
+        "region": {
+          "type": "string",
+          "description": "Region where the dealer is located"
+        },
+        "country": {
+          "type": "string",
+          "description": "Country where the dealer is located"
+        },
+        "state": {
+          "type": "string",
+          "description": "State where the dealer is located"
+        },
+        "dma": {
+          "type": "string",
+          "description": "Designated Market Area of the dealer"
+        },
+        "city": {
+          "type": "string",
+          "description": "City where the dealer is located"
+        },
+        "zipCode": {
+          "type": "string",
+          "description": "Zip code of the dealer"
+        }
+      }
+    },
+    "search": {
+      "type": "object",
+      "description": "Search details",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Type of search"
+        },
+        "term": {
+          "type": "string",
+          "description": "Search term"
+        },
+        "resultCount": {
+          "type": "integer",
+          "description": "Number of search results"
+        },
+        "resultClicked": {
+          "type": "string",
+          "description": "Clicked result ID"
+        },
+        "facetsUsed": {
+          "type": "array",
+          "description": "List of used facets",
+          "items": {
+            "type": "string",
+            "description": "Facet ID"
+          }
+        },
+        "filtersUsed": {
+          "type": "array",
+          "description": "List of used filters",
+          "items": {
+            "type": "string",
+            "description": "Filter ID"
+          }
+        }
+      }
+    },
+    "form": {
+      "type": "object",
+      "description": "Form details",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Form ID"
+        },
+        "formName": {
+          "type": "string",
+          "description": "Form name"
+        },
+        "fieldName": {
+          "type": "string",
+          "description": "Field name in the form"
+        },
+        "submissionStatus": {
+          "type": "string",
+          "description": "Submission status of the form"
+        },
+        "interactionType": {
+          "type": "string",
+          "description": "Type of interaction with the form"
+        },
+        "location": {
+          "type": "string",
+          "description": "Location of the form"
+        }
+      }
+    },
+    "link": {
+      "type": "object",
+      "description": "Link details",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Link text"
+        },
+        "destination": {
+          "type": "string",
+          "description": "Destination URL of the link"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of link"
+        },
+        "interactionType": {
+          "type": "string",
+          "description": "Type of interaction with the link"
+        },
+        "location": {
+          "type": "string",
+          "description": "Location of the link"
+        }
+      }
+    }
+  }
+}

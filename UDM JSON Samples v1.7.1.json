@@ -1,0 +1,581 @@
+{
+  "user": {
+    "ecid": "84273028197302198523451234567891234567",
+    "id": "012345678",
+    "cdi": "cdi-abc123",
+    "gcin": "gcin-def456",
+    "accountStartDate": "2022-01-01",
+    "onstarAccountId": "onstar-789",
+    "role": "customer",
+    "fullName": "John Doe",
+    "emailAddress": "johndoe@example.com",
+    "dateOfBirth": "1990-05-15",
+    "preferredLanguage": "en-US",
+    "country": "US",
+    "zipCode": "12345",
+    "gender": "Male",
+    "region": "Northern America",
+    "onboardingStatus": "completed",
+    "registrationMethod": "online",
+    "organization": {
+      "id": "org123",
+      "name": "ABC Company"
+    },
+    "customerTenure": "2 years",
+    "authentication": {
+      "method": "password",
+      "state": "authenticated"
+    },
+    "preferredDealer": {
+      "name": "AutoNation",
+      "zipCode": "19021",
+      "id": "dealer123"
+    },
+    "rewardsInfo": {
+      "tier": "gold",
+      "memberId": "rewards123",
+      "gmCardholderStatus": "member",
+      "rewardsStatus": "active"
+    },
+    "channel": "web",
+    "businessAccountStatus": "active",
+    "lineOfBusiness": "automotive"
+  },
+  "session": {
+    "id": "84273028197302198523451234567891234567_2",
+    "referrer": "https://www.example.com",
+    "source": "direct",
+    "visitNumber": 2
+  },
+  "page": {
+    "pageName": "Home",
+    "title": "Welcome to General Motors",
+    "language": "en-US",
+    "country": "US",
+    "region": "North America",
+    "siteName": "GM Website",
+    "previousPage": "https://www.example.com/landing",
+    "url": "https://www.example.com/home",
+    "path": "/home",
+    "type": "homepage",
+    "subType": "main",
+    "pageGroup1": "main",
+    "pageGroup2": "information",
+    "pageGroup3": "overview",
+    "pageGroup4": null,
+    "pageGroup5": null,
+    "brand": "Chevrolet",
+    "scrollDepth": 75
+  },
+  "eventData": {
+    "type": "click",
+    "name": "Banner Click"
+  },
+  "transaction": {
+    "id": "transaction123",
+    "totalAmount": 84000,
+    "subTotal": 82000,
+    "shipping": 1000,
+    "tax": 2000,
+    "brand": "Cadillac",
+    "salesChannel": "online",
+    "rewardPoints": 2500,
+    "discount": {
+      "type": "loyalty",
+      "name": "GM Rewards Discount",
+      "amount": 1000
+    },
+    "productsList": [
+        {
+          "productId": "product123",
+          "productVariant": "premium-package",
+          "productVariantId": "variant123",
+          "productName": "Cadillac Escalade",
+          "productCategory": "SUV",
+          "price": 80000,
+          "listPrice": 85000,
+          "displayPrice": 82000,
+          "quantity": 1,
+          "productBrand": "Cadillac",
+          "discounts": [
+            {
+              "type": "loyalty",
+              "name": "GM Rewards Discount",
+              "amount": 3000
+            }
+          ]
+        },
+        {
+          "productId": "product456",
+          "productVariant": "standard-package",
+          "productVariantId": "variant456",
+          "productName": "All-weather Floor Mats",
+          "productCategory": "Accessories",
+          "price": 2000,
+          "listPrice": 2200,
+          "displayPrice": 2000,
+          "quantity": 1,
+          "productBrand": "GM",
+          "discounts": []
+        }
+      ],
+    "campaignsAssociated": [
+      "campaign123",
+      "campaign456"
+    ]
+  },
+  "products": [
+    {
+      "productId": "product123",
+      "productVariant": "premium-package",
+      "productVariantId": "variant123",
+      "productName": "Cadillac Escalade",
+      "productCategory": "SUV",
+      "price": 81000,
+      "listPrice": 85000,
+      "displayPrice": 82000,
+      "quantity": 1,
+      "productBrand": "Cadillac",
+      "discounts": [
+        {
+          "type": "seasonal",
+          "name": "Summer Sale",
+          "amount": 3000
+        },
+        {
+          "type": "loyalty",
+          "name": "GM Rewards Discount",
+          "amount": 1000
+        }
+      ]
+    },
+    {
+      "productId": "product456",
+      "productVariant": "standard-package",
+      "productVariantId": "variant456",
+      "productName": "Chevrolet Tahoe",
+      "productCategory": "SUV",
+      "price": 60000,
+      "listPrice": 64000,
+      "displayPrice": 61000,
+      "quantity": 1,
+      "productBrand": "Chevrolet",
+      "discounts": [
+        {
+          "type": "seasonal",
+          "name": "Winter Sale",
+          "amount": 2000
+        },
+        {
+          "type": "clearance",
+          "name": "End of Year Clearance",
+          "amount": 1500
+        }
+      ]
+    },
+    {
+      "productId": "product789",
+      "productVariant": "luxury-package",
+      "productVariantId": "variant789",
+      "productName": "Buick Enclave",
+      "productCategory": "SUV",
+      "price": 55000,
+      "listPrice": 59000,
+      "displayPrice": 56000,
+      "quantity": 1,
+      "productBrand": "Buick",
+      "discounts": [
+        {
+          "type": "seasonal",
+          "name": "Spring Sale",
+          "amount": 2500
+        },
+        {
+          "type": "loyalty",
+          "name": "Buick Rewards Discount",
+          "amount": 1200
+        }
+      ]
+    }
+  ],
+  "vehicle": {
+    "vin": "1G1YM3D76E5123456",
+    "brand": "Chevrolet",
+    "modelName": "Camaro",
+    "color": "Red",
+    "modelYear": "2022",
+    "trim": "SS",
+    "type": "Coupe",
+    "driveType": "RWD",
+    "powerTrain": "V8",
+    "condition": "New",
+    "ownershipStatus": "Owned",
+    "status": "Available",
+    "bodyStyle": "Coupe",
+    "tenure": "1 year",
+    "location": "Dealer Lot",
+    "promotions": [
+      {
+        "name": "Summer Sale",
+        "id": "promo123",
+        "startDate": "2023-06-01",
+        "endDate": "2023-08-31",
+        "description": "Get $2,000 off on select models"
+      },
+      {
+        "name": "GM Rewards Bonus",
+        "id": "promo456",
+        "startDate": "2023-06-01",
+        "endDate": "2023-12-31",
+        "description": "Earn extra 1,000 reward points"
+      }
+    ],
+    "purchaseDate": "2022-01-15",
+    "leaseEndDate": null,
+    "mileage": 5000,
+    "price": 45000,
+    "resaleValue": 38000,
+    "drpo": true,
+    "packages": [
+      {
+        "name": "Technology Package",
+        "status": "Active",
+        "plan": "Monthly",
+        "duration": "36 months"
+      },
+      {
+        "name": "Performance Package",
+        "status": "Active",
+        "plan": "Yearly",
+        "duration": "3 years"
+      }
+    ],
+    "features": [
+      {
+        "name": "Adaptive Cruise Control",
+        "capable": true,
+        "enrolled": true
+      },
+      {
+        "name": "Lane Keep Assist",
+        "capable": true,
+        "enrolled": false
+      },
+      {
+        "name": "Automatic Emergency Braking",
+        "capable": true,
+        "enrolled": true
+      }
+    ],
+    "history": [
+      {
+        "id": "history123",
+        "recordedDate": "2023-05-01T09:00:00Z",
+        "event": "Service",
+        "description": "Regular maintenance",
+        "serviceEntity": "ABC Service Center",
+        "relatedDocuments": [
+          "invoice123",
+          "workOrder456"
+        ],
+        "notes": "Oil change and tire rotation",
+        "mileageAtTime": 4800,
+        "location": "Service Center",
+        "serviceCost": 200,
+        "partsChanged": [
+          "oilFilter",
+          "airFilter"
+        ],
+        "warrantyStatus": "Active",
+        "serviceReceipt": "receipt789"
+      },
+      {
+        "id": "history124",
+        "recordedDate": "2023-02-15T14:30:00Z",
+        "event": "Inspection",
+        "description": "Annual state inspection",
+        "serviceEntity": "XYZ Inspection Center",
+        "relatedDocuments": [
+          "inspectionReport789"
+        ],
+        "notes": "Passed inspection, minor recommendations for future maintenance",
+        "mileageAtTime": 4200,
+        "location": "Inspection Center",
+        "serviceCost": 50,
+        "partsChanged": [],
+        "warrantyStatus": "Active",
+        "serviceReceipt": "receipt790"
+      },
+      {
+        "id": "history125",
+        "recordedDate": "2022-08-10T11:15:00Z",
+        "event": "Repair",
+        "description": "Replace faulty alternator",
+        "serviceEntity": "DEF Auto Repair",
+        "relatedDocuments": [
+          "repairOrder321",
+          "partInvoice654"
+        ],
+        "notes": "Alternator replaced under warranty",
+        "mileageAtTime": 3500,
+        "location": "Repair Shop",
+        "serviceCost": 0,
+        "partsChanged": [
+          "alternator"
+        ],
+        "warrantyStatus": "Active",
+        "serviceReceipt": "receipt791"
+      }
+    ]
+  },
+  "garage": {
+    "id": "garage123",
+    "chargers": [
+      {
+        "type": "Level 2",
+        "brand": "ChargePoint",
+        "status": "Operational"
+      },
+      {
+        "type": "Level 3",
+        "brand": "Tesla",
+        "status": "Operational"
+      }
+    ],
+    "vehicleList": [
+      "vehicle123",
+      "vehicle456"
+    ],
+    "sharedVehicleList": [
+      "vehicle789"
+    ],
+    "vehicleCount": 2,
+    "sharedVehicleCount": 1
+  },
+  "integration": {
+    "id": "integration123",
+    "platform": "Salesforce",
+    "dataPoints": [
+      "dataPoint123",
+      "dataPoint456"
+    ],
+    "type": "CRM",
+    "status": "Active",
+    "lastUpdated": "2023-06-01T12:00:00Z"
+  },
+  "platform": {
+    "id": "platform123",
+    "name": "Website",
+    "version": "v1.0",
+    "type": "Web",
+    "deploymentDate": "2022-01-01",
+    "environmentType": "Production",
+    "supportedMarket": "Global"
+  },
+  "device": {
+    "id": "device123",
+    "type": "Mobile",
+    "name": "iPhone 13",
+    "os": "iOS 15",
+    "manufacturer": "Apple",
+    "language": "en-US",
+    "screenOrientation": "Portrait",
+    "screenHeight": 2532,
+    "screenWidth": 1170,
+    "networkType": "WiFi",
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1",
+    "ipAddress": "192.168.1.1",
+    "geoLocation": "37.7749,-122.4194"
+  },
+  "content": [
+    {
+      "id": "content123",
+      "title": "2023 Buick Encore GX",
+      "type": "Vehicle Overview",
+      "publishDate": "2023-01-15",
+      "category": "SUV",
+      "brand": "Buick",
+      "channel": "Website",
+      "rendered": true,
+      "error": null,
+      "associatedTags": [
+        "compact",
+        "luxury",
+        "efficient"
+      ],
+      "interactions": [
+        {
+          "type": "view",
+          "duration": 60
+        },
+        {
+          "type": "click",
+          "element": "gallery"
+        }
+      ],
+      "interactionDuration": 120,
+      "interactionType": "active"
+    },
+    {
+      "id": "content456",
+      "title": "GM Announces New Electric Vehicle Lineup",
+      "type": "Press Release",
+      "publishDate": "2023-05-01",
+      "category": "News",
+      "brand": "General Motors",
+      "channel": "Website",
+      "rendered": true,
+      "error": null,
+      "associatedTags": [
+        "electric",
+        "sustainability",
+        "innovation"
+      ],
+      "interactions": [
+        {
+          "type": "view",
+          "duration": 180
+        },
+        {
+          "type": "share",
+          "platform": "Twitter"
+        }
+      ],
+      "interactionDuration": 240,
+      "interactionType": "engaging"
+    }
+  ],
+  "feedback": {
+    "id": "feedback123",
+    "type": "Positive",
+    "source": "Email",
+    "content": "Great service!",
+    "submissionDate": "2023-06-01",
+    "npsScore": 10,
+    "csatScore": 5,
+    "cesScore": 1,
+    "fcr": true,
+    "fcrTimes": 1,
+    "emotion": "Happy",
+    "status": "Resolved",
+    "response": {
+      "date": "2023-06-02T08:00:00Z",
+      "content": "Thank you for your feedback!",
+      "respondedBy": "Customer Support"
+    }
+  },
+  "notification": {
+    "id": "notification123",
+    "channel": "Email",
+    "category": "Promotion",
+    "title": "Summer Sale Starts Now!",
+    "content": "Get up to 20% off on select vehicles.",
+    "brand": "General Motors",
+    "readStatus": false,
+    "clicks": 5,
+    "deliveryStatus": "Delivered",
+    "actionTaken": "Opened"
+  },
+  "campaign": {
+    "id": "campaign123",
+    "name": "Summer Promotion",
+    "type": "Seasonal",
+    "startDate": "2023-06-01",
+    "endDate": "2023-08-31",
+    "audience": "All customers",
+    "brand": "GM",
+    "conversionRate": 5.5
+  },
+  "experiment": {
+    "id": "experiment123",
+    "type": "A/B Test",
+    "name": "Homepage Banner Test",
+    "variant": {
+      "name": "Variant A",
+      "description": "Red Banner",
+      "details": "Testing red banner for promotions"
+    },
+    "startDate": "2023-06-01",
+    "endDate": "2023-06-30",
+    "status": "Active",
+    "audience": "50% of visitors",
+    "successMetric": "Click-through rate",
+    "brand": "GM",
+    "channel": "Website",
+    "outcome": "TBD"
+  },
+  "errorLog": {
+    "errorId": "error123",
+    "errorType": "System",
+    "errorCode": "500",
+    "errorMessage": "Internal Server Error",
+    "errorLocation": "Checkout Page"
+  },
+  "fleet": {
+    "id": "fleet123",
+    "name": "Company Fleet",
+    "owner": "ABC Corp",
+    "type": "Corporate",
+    "orgId": "org123",
+    "location": "Main Office",
+    "status": {
+      "onstarSafetyServices": "Active",
+      "onstarVehicleInsights": "Active",
+      "apiStatus": "Operational"
+    },
+    "notes": "Fleet is fully operational",
+    "size": {
+      "total": 50,
+      "gmBranded": 30,
+      "onstarEquipped": 20,
+      "gen10Plus": 10,
+      "numberOfVehiclesAdded": 5,
+      "numberOfVehiclesThrowingErrors": 1
+    },
+    "vehiclesInFleet": [
+      "vehicle123",
+      "vehicle456"
+    ]
+  },
+  "dealer": {
+    "id": "dealer123",
+    "name": "ABC Motors",
+    "group": "ABC Group",
+    "brand": "Chevrolet",
+    "region": "East",
+    "country": "US",
+    "state": "NY",
+    "dma": "New York",
+    "city": "New York City",
+    "zipCode": "10001"
+  },
+  "search": {
+    "type": "Vehicle",
+    "term": "Chevrolet Camaro",
+    "resultCount": 10,
+    "resultClicked": "result123",
+    "facetsUsed": [
+      "color",
+      "year"
+    ],
+    "filtersUsed": [
+      "price",
+      "mileage"
+    ]
+  },
+  "form": {
+    "id": "form123",
+    "formName": "Contact Us",
+    "fieldName": "Email",
+    "submissionStatus": "Submitted",
+    "interactionType": "Filled",
+    "location": "Contact Page"
+  },
+  "link": {
+    "text": "Click here for more information",
+    "destination": "https://www.example.com/info",
+    "type": "External",
+    "interactionType": "Click",
+    "location": "Home Page"
+  }
+}
