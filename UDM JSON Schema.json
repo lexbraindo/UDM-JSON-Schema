@@ -259,6 +259,13 @@
         "scrollDepth": {
           "type": "number",
           "description": "Scroll depth percentage"
+        },
+        "parameters": {
+          "type": "object",
+          "description": "Query string parameters key and value pairs",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       }
     },
