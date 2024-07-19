@@ -8,11 +8,11 @@
       "properties": {
         "ecid": {
           "type": "string",
-          "description": "The unique identifier for the user"
+          "description": "Adobe experience cloud ID"
         },
         "id": {
           "type": "string",
-          "description": "User's ID"
+          "description": "The unique identifier for the user, MyAccount ID"
         },
         "cdi": {
           "type": "string",
@@ -41,7 +41,7 @@
         },
         "emailAddress": {
           "type": "string",
-          "description": "User's email address"
+          "description": "User's hashed email address"
         },
         "dateOfBirth": {
           "type": "string",
