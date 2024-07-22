@@ -12,7 +12,7 @@
         },
         "id": {
           "type": "string",
-          "description": "The unique identifier for the user, MyAccount ID"
+          "description": "The unique identifier for the user within the system, MyAccount ID"
         },
         "cdi": {
           "type": "string",
@@ -168,7 +168,7 @@
       "properties": {
         "id": {
           "type": "string",
-          "description": "Session ID"
+          "description": "Session ID created by pipe delimited ecid|visit number"
         },
         "referrer": {
           "type": "string",
