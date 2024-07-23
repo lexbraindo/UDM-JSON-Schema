@@ -20,7 +20,7 @@
         },
         "gcin": {
           "type": "string",
-          "description": "Global Customer Identifier"
+          "description": "Users GCIN, Global Customer Identifier"
         },
         "accountStartDate": {
           "type": "string",
@@ -70,7 +70,7 @@
         },
         "onboardingStatus": {
           "type": "string",
-          "description": "User's onboarding status"
+          "description": "Captures the current status of the user in the onboarding process."
         },
         "registrationMethod": {
           "type": "string",
@@ -150,7 +150,8 @@
         },
         "channel": {
           "type": "string",
-          "description": "User's channel"
+          "description": "The platform or medium where the user was acquired. First touch channel. Such as web, mobile, or social media, push_notifcation, email, SMS.
+"
         },
         "businessAccountStatus": {
           "type": "string",
