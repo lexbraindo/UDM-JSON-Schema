@@ -373,12 +373,12 @@
   },
   "platform": {
     "id": "platform123",
-    "name": "Website",
-    "version": "v1.0",
-    "type": "Web",
+    "name": "myOwner",
+    "version": "1.1.54-0",
+    "type": "iOS",
     "deploymentDate": "2022-01-01",
-    "environmentType": "Production",
-    "supportedMarket": "Global"
+    "environmentType": "dev",
+    "supportedMarket": "eu"
   },
   "device": {
     "id": "device123",
