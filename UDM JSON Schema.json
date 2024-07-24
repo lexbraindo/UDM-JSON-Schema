@@ -150,8 +150,7 @@
         },
         "channel": {
           "type": "string",
-          "description": "The platform or medium where the user was acquired. First touch channel. Such as web, mobile, or social media, push_notifcation, email, SMS.
-"
+          "description": "The platform or medium where the user was acquired. First touch channel. Such as web, mobile, or social media, push_notifcation, email, SMS."
         },
         "businessAccountStatus": {
           "type": "string",
