@@ -22,6 +22,10 @@
           "type": "string",
           "description": "Users GCIN, Global Customer Identifier"
         },
+        "hid": {
+          "type": "string",
+          "description": "A user's hashed user ID"
+        },
         "accountStartDate": {
           "type": "string",
           "format": "date",
@@ -42,6 +46,10 @@
         "emailAddress": {
           "type": "string",
           "description": "User's hashed email address"
+        },
+        "emailCampaign": {
+          "type": "string",
+          "description": "A user's email campaign id"
         },
         "dateOfBirth": {
           "type": "string",
@@ -220,6 +228,10 @@
           "type": "string",
           "description": "Page URL"
         },
+        "urlWithParams": {
+          "type": "string",
+          "description": "Complete URL including query string parameters"
+        },
         "path": {
           "type": "string",
           "description": "Page path"
@@ -231,6 +243,10 @@
         "subType": {
           "type": "string",
           "description": "Page sub-type"
+        },
+        "tier": {
+          "type": "string",
+          "description": "Identifies the whether the content is at the dealer, dealer association, or corporate/brand level."
         },
         "pageGroup1": {
           "type": "string",
@@ -260,11 +276,100 @@
           "type": "number",
           "description": "Scroll depth percentage"
         },
+        "scope": {
+          "type": "string",
+          "description": "The scope of the page item"
+        },
+        "targetCampaign": {
+          "type": "string",
+          "description": "Adobe Target campaign tracking id"
+        },
         "parameters": {
           "type": "object",
           "description": "Query string parameters key and value pairs",
           "additionalProperties": {
             "type": "string"
+          }
+        },
+        "content": {
+          "type": "array",
+          "description": "List of content objects on the page",
+          "items": {
+            "type": "object",
+            "description": "Content details",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Content ID"
+              },
+              "title": {
+                "type": "string",
+                "description": "Content title"
+              },
+              "type": {
+                "type": "string",
+                "description": "Content type"
+              },
+              "publishDate": {
+                "type": "string",
+                "format": "date",
+                "description": "Publish date of the content"
+              },
+              "category": {
+                "type": "string",
+                "description": "Content category"
+              },
+              "brand": {
+                "type": "string",
+                "description": "Brand associated with the content"
+              },
+              "channel": {
+                "type": "string",
+                "description": "Channel through which content is delivered"
+              },
+              "rendered": {
+                "type": "boolean",
+                "description": "Rendering status of the content"
+              },
+              "error": {
+                "type": "object",
+                "description": "Error details",
+                "properties": {
+                  "code": {
+                    "type": "string",
+                    "description": "Error code"
+                  },
+                  "message": {
+                    "type": "string",
+                    "description": "Error message"
+                  }
+                }
+              },
+              "associatedTags": {
+                "type": "array",
+                "description": "List of associated tags",
+                "items": {
+                  "type": "string",
+                  "description": "Tag ID"
+                }
+              },
+              "interactions": {
+                "type": "array",
+                "description": "List of interactions",
+                "items": {
+                  "type": "object",
+                  "description": "Interaction details"
+                }
+              },
+              "interactionDuration": {
+                "type": "integer",
+                "description": "Duration of interaction"
+              },
+              "interactionType": {
+                "type": "string",
+                "description": "Type of interaction"
+              }
+            }
           }
         }
       }
@@ -456,6 +561,10 @@
           "type": "string",
           "description": "Vehicle color"
         },
+        "interiorColor": {
+          "type": "string",
+          "description": "Vehicle interior color"
+        },
         "modelYear": {
           "type": "string",
           "description": "Model year of the vehicle"
@@ -499,6 +608,10 @@
         "location": {
           "type": "string",
           "description": "Location of the vehicle"
+        },
+        "voi": {
+          "type": "string",
+          "description": "vehicle of interest tracking"
         },
         "promotions": {
           "type": "array",
@@ -859,87 +972,6 @@
         "geoLocation": {
           "type": "string",
           "description": "Geolocation of the device"
-        }
-      }
-    },
-    "content": {
-      "type": "array",
-      "description": "List of content objects",
-      "items": {
-        "type": "object",
-        "description": "Content details",
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Content ID"
-          },
-          "title": {
-            "type": "string",
-            "description": "Content title"
-          },
-          "type": {
-            "type": "string",
-            "description": "Content type"
-          },
-          "publishDate": {
-            "type": "string",
-            "format": "date",
-            "description": "Publish date of the content"
-          },
-          "category": {
-            "type": "string",
-            "description": "Content category"
-          },
-          "brand": {
-            "type": "string",
-            "description": "Brand associated with the content"
-          },
-          "channel": {
-            "type": "string",
-            "description": "Channel through which content is delivered"
-          },
-          "rendered": {
-            "type": "boolean",
-            "description": "Rendering status of the content"
-          },
-          "error": {
-            "type": "object",
-            "description": "Error details",
-            "properties": {
-              "code": {
-                "type": "string",
-                "description": "Error code"
-              },
-              "message": {
-                "type": "string",
-                "description": "Error message"
-              }
-            }
-          },
-          "associatedTags": {
-            "type": "array",
-            "description": "List of associated tags",
-            "items": {
-              "type": "string",
-              "description": "Tag ID"
-            }
-          },
-          "interactions": {
-            "type": "array",
-            "description": "List of interactions",
-            "items": {
-              "type": "object",
-              "description": "Interaction details"
-            }
-          },
-          "interactionDuration": {
-            "type": "integer",
-            "description": "Duration of interaction"
-          },
-          "interactionType": {
-            "type": "string",
-            "description": "Type of interaction"
-          }
         }
       }
     },
@@ -1427,6 +1459,79 @@
           "type": "string",
           "description": "Location of the link"
         }
+      },
+      "media": {
+        "type": "object",
+        "description": "Media details for audio and video content",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the media"
+          },
+          "title": {
+            "type": "string",
+            "description": "Title of the media"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL of the media file or stream"
+          },
+          "duration": {
+            "type": "number",
+            "description": "Total length of the media in seconds"
+          },
+          "currentTime": {
+            "type": "number",
+            "description": "Current playhead position in seconds"
+          },
+          "percentComplete": {
+            "type": "number",
+            "description": "Percentage of media played"
+          },
+          "eventName": {
+            "type": "string",
+            "description": "The current media event (e.g., start, play, pause, complete)"
+          },
+          "playerName": {
+            "type": "string",
+            "description": "Name of the media player being used"
+          },
+          "streamType": {
+            "type": "string",
+            "description": "Type of media stream (e.g., 'vod', 'live', 'linear', 'podcast', 'audiobook', 'aod')"
+          },
+          "contentType": {
+            "type": "string",
+            "description": "Type of content ('video' for video content, 'audio' for audio content)"
+          },
+          "quality": {
+            "type": "string",
+            "description": "Quality of the media (e.g., resolution for video, bitrate for audio)"
+          },
+          "fullScreen": {
+            "type": "boolean",
+            "description": "Indicates if the player is in full-screen mode"
+          },
+          "muted": {
+            "type": "boolean",
+            "description": "Indicates if the media is muted"
+          },
+          "visible": {
+            "type": "boolean",
+            "description": "Indicates if the media player is visible or in-focus to the user"
+          },
+          "source": {
+            "type": "string",
+            "description": "Source of the media (e.g., 'internal', 'youtube', 'vimeo', 'soundcloud', 'apple_music', 'audible')"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "url",
+          "duration",
+          "contentType"
+        ]
       }
     }
   }
